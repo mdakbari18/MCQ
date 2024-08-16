@@ -1,0 +1,2551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      href="https://qualexe.com/assets/images/footer.png"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="css/bootstrap.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/custom.css" />
+
+    <script
+      src="javascript/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <title>Tournament</title>
+  </head>
+
+  <body class="white_bg">
+    <div class="top-nav">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <div class="start-timer">
+            <div class="row">
+              <div class="col-md-2">
+                <div class="left color-orange">
+                  Time Left - <span id="timer"></span> mins
+                </div>
+              </div>
+
+              <div
+                class="col-md-10 tournament_legend text_right text_left_mobile"
+              >
+                <div class="legend-section legend_popup">
+                  <table class="mobile_view">
+                    <tr>
+                      <td>
+                        <span class="green_bg">0</span>
+                      </td>
+                      <td>Answered</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="blue_bg">0</span>
+                      </td>
+                      <td>Answered and Marked for review</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="orange_bg">0</span>
+                      </td>
+                      <td>Not Answered and Marked for review</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="red_bg">0</span>
+                      </td>
+                      <td>Not Answered</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="white_bg_bkp">0</span>
+                      </td>
+                      <td>Not Attempted</td>
+                    </tr>
+                  </table>
+                  <div class="mobile_hide">
+                    <p class="green_bkp">
+                      <span class="green_bg">0</span>Answered
+                    </p>
+                    <p class="blue_bkp">
+                      <span class="blue_bg">0</span>Answered and Marked for
+                      review
+                    </p>
+                    <p class="orange_bkp">
+                      <span class="orange_bg">0</span>Not Answered and Marked
+                      for review
+                    </p>
+                    <p><span class="red_bg">0</span>Not Answered</p>
+                    <p><span class="white_bg_bkp">0</span>Not Attempted</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- nav end -->
+
+    <!-- tournament round 1 start-->
+    <div class="main-pannel background-white">
+      <div class="left-pannel">
+        <form
+          name="quiz"
+          id="tournament_form"
+          method="post"
+          enctype="multipart/form-data"
+        >
+          <input type="hidden" name="quiz_id" value="273" />
+          <div class="select-question px-4">
+            <div
+              class="question_block question_no_885 none_question"
+              data-id="885"
+            >
+              <input type="hidden" name="answer[885]" value="B" />
+              <h4 class="question_heading">
+                <span class="question_no">Q1.</span>
+                <span class="question_detail"
+                  >A heater is rated as 230 volt, 10 kW, AC. The value 230 volt
+                  refers to</span
+                >
+              </h4>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_885"
+                  type="radio"
+                  value="a"
+                  name="quiz_radio[885]"
+                  id="quiz_radio_a_885"
+                />
+                <label class="form-check-label" for="quiz_radio_a_885">
+                  Average value
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  checked
+                  class="form-check-input ans_checkbox_885"
+                  type="radio"
+                  value="b"
+                  name="quiz_radio[885]"
+                  id="quiz_radio_b_885"
+                />
+                <label class="form-check-label" for="quiz_radio_b_885">
+                  rms value
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_885"
+                  type="radio"
+                  value="c"
+                  name="quiz_radio[885]"
+                  id="quiz_radio_c_885"
+                />
+                <label class="form-check-label" for="quiz_radio_c_885">
+                  peak value
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_885"
+                  type="radio"
+                  value="d"
+                  name="quiz_radio[885]"
+                  id="quiz_radio_d_885"
+                />
+                <label class="form-check-label" for="quiz_radio_d_885">
+                  none of the above
+                </label>
+              </div>
+            </div>
+            <div
+              class="question_block question_no_17188 none_question"
+              data-id="17188"
+            >
+              <input type="hidden" name="answer[17188]" value="A" />
+              <h4 class="question_heading">
+                <span class="question_no">Q2.</span>
+                <span class="question_detail"
+                  >The formula for rms value of sinusoidal signal in terms of
+                  peak to peak voltage, \(V_{p-p}\) is<br />
+                  __________.</span
+                >
+              </h4>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_17188"
+                  type="radio"
+                  value="a"
+                  name="quiz_radio[17188]"
+                  id="quiz_radio_a_17188"
+                />
+                <label class="form-check-label" for="quiz_radio_a_17188">
+                  \(\frac{V_{p-p}}{2 \sqrt{2}}\)
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_17188"
+                  type="radio"
+                  value="b"
+                  name="quiz_radio[17188]"
+                  id="quiz_radio_b_17188"
+                />
+                <label class="form-check-label" for="quiz_radio_b_17188">
+                  \(\frac{V_{p-p}}{2}\)
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_17188"
+                  type="radio"
+                  value="c"
+                  name="quiz_radio[17188]"
+                  id="quiz_radio_c_17188"
+                />
+                <label class="form-check-label" for="quiz_radio_c_17188">
+                  \(\frac{V_{p-p}}{\pi \sqrt{2}}\)
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_17188"
+                  type="radio"
+                  value="d"
+                  name="quiz_radio[17188]"
+                  id="quiz_radio_d_17188"
+                />
+                <label class="form-check-label" for="quiz_radio_d_17188">
+                  \(\frac{V_{p-p}}{\sqrt{2}}\)
+                </label>
+              </div>
+            </div>
+            <div
+              class="question_block question_no_9156 none_question"
+              data-id="9156"
+            >
+              <input type="hidden" name="answer[9156]" value="B" />
+              <h4 class="question_heading">
+                <span class="question_no">Q3.</span>
+                <span class="question_detail"
+                  >The turn-off time of GTO does NOT include:</span
+                >
+              </h4>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_9156"
+                  type="radio"
+                  value="a"
+                  name="quiz_radio[9156]"
+                  id="quiz_radio_a_9156"
+                />
+                <label class="form-check-label" for="quiz_radio_a_9156">
+                  Fall period
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_9156"
+                  type="radio"
+                  value="b"
+                  name="quiz_radio[9156]"
+                  id="quiz_radio_b_9156"
+                />
+                <label class="form-check-label" for="quiz_radio_b_9156">
+                  Settling period
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_9156"
+                  type="radio"
+                  value="c"
+                  name="quiz_radio[9156]"
+                  id="quiz_radio_c_9156"
+                />
+                <label class="form-check-label" for="quiz_radio_c_9156">
+                  Storage period
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_9156"
+                  type="radio"
+                  value="d"
+                  name="quiz_radio[9156]"
+                  id="quiz_radio_d_9156"
+                />
+                <label class="form-check-label" for="quiz_radio_d_9156">
+                  Tail period
+                </label>
+              </div>
+            </div>
+            <div
+              class="question_block question_no_851 none_question"
+              data-id="851"
+            >
+              <input type="hidden" name="answer[851]" value="A" />
+              <h4 class="question_heading">
+                <span class="question_no">Q4.</span>
+                <span class="question_detail"
+                  >1k\(\Omega\), 1W resistor can safely pass a current of</span
+                >
+              </h4>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_851"
+                  type="radio"
+                  value="a"
+                  name="quiz_radio[851]"
+                  id="quiz_radio_a_851"
+                />
+                <label class="form-check-label" for="quiz_radio_a_851">
+                  30 mA
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_851"
+                  type="radio"
+                  value="b"
+                  name="quiz_radio[851]"
+                  id="quiz_radio_b_851"
+                />
+                <label class="form-check-label" for="quiz_radio_b_851">
+                  100 mA
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_851"
+                  type="radio"
+                  value="c"
+                  name="quiz_radio[851]"
+                  id="quiz_radio_c_851"
+                />
+                <label class="form-check-label" for="quiz_radio_c_851">
+                  150 mA
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_851"
+                  type="radio"
+                  value="d"
+                  name="quiz_radio[851]"
+                  id="quiz_radio_d_851"
+                />
+                <label class="form-check-label" for="quiz_radio_d_851">
+                  500 mA
+                </label>
+              </div>
+            </div>
+            <div
+              class="question_block question_no_20104 none_question"
+              data-id="20104"
+            >
+              <input type="hidden" name="answer[20104]" value="A" />
+              <h4 class="question_heading">
+                <span class="question_no">Q5.</span>
+                <span class="question_detail"
+                  >Consider the following statements regarding measurement of
+                  three phase power by two wattmeter method; one of the
+                  wattmeter reads negative reading which implies that</span
+                >
+              </h4>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_20104"
+                  type="radio"
+                  value="a"
+                  name="quiz_radio[20104]"
+                  id="quiz_radio_a_20104"
+                />
+                <label class="form-check-label" for="quiz_radio_a_20104">
+                  power factor is less than 0.5
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_20104"
+                  type="radio"
+                  value="b"
+                  name="quiz_radio[20104]"
+                  id="quiz_radio_b_20104"
+                />
+                <label class="form-check-label" for="quiz_radio_b_20104">
+                  power flow is in reverse direction
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_20104"
+                  type="radio"
+                  value="c"
+                  name="quiz_radio[20104]"
+                  id="quiz_radio_c_20104"
+                />
+                <label class="form-check-label" for="quiz_radio_c_20104">
+                  load is unbalanced
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_20104"
+                  type="radio"
+                  value="d"
+                  name="quiz_radio[20104]"
+                  id="quiz_radio_d_20104"
+                />
+                <label class="form-check-label" for="quiz_radio_d_20104">
+                  power factor is greater than 0.5
+                </label>
+              </div>
+            </div>
+            <div
+              class="question_block question_no_9244 none_question"
+              data-id="9244"
+            >
+              <input type="hidden" name="answer[9244]" value="C" />
+              <h4 class="question_heading">
+                <span class="question_no">Q6.</span>
+                <span class="question_detail"
+                  >For two port network, z parameters are given as:<br />
+                  <br />
+                  \(Z_{11}=5, Z_{12}=1, Z_{21}=1, Z_{22}=3.\) <br />
+                  <br />
+                  The network is: _____</span
+                >
+              </h4>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_9244"
+                  type="radio"
+                  value="a"
+                  name="quiz_radio[9244]"
+                  id="quiz_radio_a_9244"
+                />
+                <label class="form-check-label" for="quiz_radio_a_9244">
+                  Neither reciprocal nor symmetrical
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_9244"
+                  type="radio"
+                  value="b"
+                  name="quiz_radio[9244]"
+                  id="quiz_radio_b_9244"
+                />
+                <label class="form-check-label" for="quiz_radio_b_9244">
+                  Reciprocal and symmetrical
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_9244"
+                  type="radio"
+                  value="c"
+                  name="quiz_radio[9244]"
+                  id="quiz_radio_c_9244"
+                />
+                <label class="form-check-label" for="quiz_radio_c_9244">
+                  Reciprocal but not symmetrical
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_9244"
+                  type="radio"
+                  value="d"
+                  name="quiz_radio[9244]"
+                  id="quiz_radio_d_9244"
+                />
+                <label class="form-check-label" for="quiz_radio_d_9244">
+                  Symmetrical but not reciprocal
+                </label>
+              </div>
+            </div>
+            <div
+              class="question_block question_no_8803 none_question"
+              data-id="8803"
+            >
+              <input type="hidden" name="answer[8803]" value="A" />
+              <h4 class="question_heading">
+                <span class="question_no">Q7.</span>
+                <span class="question_detail"
+                  >The crystal frequency of 8085 microprocessor is 6 MHz. The
+                  time required to execute instruction XTHL over this
+                  microprocessor.</span
+                >
+              </h4>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_8803"
+                  type="radio"
+                  value="a"
+                  name="quiz_radio[8803]"
+                  id="quiz_radio_a_8803"
+                />
+                <label class="form-check-label" for="quiz_radio_a_8803">
+                  \(5.33\: \mu sec\)
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_8803"
+                  type="radio"
+                  value="b"
+                  name="quiz_radio[8803]"
+                  id="quiz_radio_b_8803"
+                />
+                <label class="form-check-label" for="quiz_radio_b_8803">
+                  \(10.67\: \mu sec\)
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_8803"
+                  type="radio"
+                  value="c"
+                  name="quiz_radio[8803]"
+                  id="quiz_radio_c_8803"
+                />
+                <label class="form-check-label" for="quiz_radio_c_8803">
+                  \(4.33\: \mu sec\)
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_8803"
+                  type="radio"
+                  value="d"
+                  name="quiz_radio[8803]"
+                  id="quiz_radio_d_8803"
+                />
+                <label class="form-check-label" for="quiz_radio_d_8803">
+                  \(8.67\: \mu sec\)
+                </label>
+              </div>
+            </div>
+            <div
+              class="question_block question_no_19208 none_question"
+              data-id="19208"
+            >
+              <input type="hidden" name="answer[19208]" value="C" />
+              <h4 class="question_heading">
+                <span class="question_no">Q8.</span>
+                <span class="question_detail"
+                  >The resultant magnetic momentum in an atom of the diamagnetic
+                  material is_________.</span
+                >
+              </h4>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_19208"
+                  type="radio"
+                  value="a"
+                  name="quiz_radio[19208]"
+                  id="quiz_radio_a_19208"
+                />
+                <label class="form-check-label" for="quiz_radio_a_19208">
+                  less than zero
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_19208"
+                  type="radio"
+                  value="b"
+                  name="quiz_radio[19208]"
+                  id="quiz_radio_b_19208"
+                />
+                <label class="form-check-label" for="quiz_radio_b_19208">
+                  infinite
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_19208"
+                  type="radio"
+                  value="c"
+                  name="quiz_radio[19208]"
+                  id="quiz_radio_c_19208"
+                />
+                <label class="form-check-label" for="quiz_radio_c_19208">
+                  zero
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_19208"
+                  type="radio"
+                  value="d"
+                  name="quiz_radio[19208]"
+                  id="quiz_radio_d_19208"
+                />
+                <label class="form-check-label" for="quiz_radio_d_19208">
+                  between zero and unity
+                </label>
+              </div>
+            </div>
+            <div
+              class="question_block question_no_19538 none_question"
+              data-id="19538"
+            >
+              <input type="hidden" name="answer[19538]" value="A" />
+              <h4 class="question_heading">
+                <span class="question_no">Q9.</span>
+                <span class="question_detail"
+                  >In the equation \(E=-N(\frac{d\phi}{dt})\), the negative sign
+                  is due to_______________.</span
+                >
+              </h4>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_19538"
+                  type="radio"
+                  value="a"
+                  name="quiz_radio[19538]"
+                  id="quiz_radio_a_19538"
+                />
+                <label class="form-check-label" for="quiz_radio_a_19538">
+                  Lenz's law
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_19538"
+                  type="radio"
+                  value="b"
+                  name="quiz_radio[19538]"
+                  id="quiz_radio_b_19538"
+                />
+                <label class="form-check-label" for="quiz_radio_b_19538">
+                  Kelvin's law
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_19538"
+                  type="radio"
+                  value="c"
+                  name="quiz_radio[19538]"
+                  id="quiz_radio_c_19538"
+                />
+                <label class="form-check-label" for="quiz_radio_c_19538">
+                  Faraday's law
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_19538"
+                  type="radio"
+                  value="d"
+                  name="quiz_radio[19538]"
+                  id="quiz_radio_d_19538"
+                />
+                <label class="form-check-label" for="quiz_radio_d_19538">
+                  Flaming's law
+                </label>
+              </div>
+            </div>
+            <div
+              class="question_block question_no_7019 none_question"
+              data-id="7019"
+            >
+              <input type="hidden" name="answer[7019]" value="A" />
+              <h4 class="question_heading">
+                <span class="question_no">Q10.</span>
+                <span class="question_detail"
+                  >A full adder can be designed
+                </span>
+              </h4>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_7019"
+                  type="radio"
+                  value="a"
+                  name="quiz_radio[7019]"
+                  id="quiz_radio_a_7019"
+                />
+                <label class="form-check-label" for="quiz_radio_a_7019">
+                  Using 2 half adders
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_7019"
+                  type="radio"
+                  value="b"
+                  name="quiz_radio[7019]"
+                  id="quiz_radio_b_7019"
+                />
+                <label class="form-check-label" for="quiz_radio_b_7019">
+                  Using 3 half adders
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_7019"
+                  type="radio"
+                  value="c"
+                  name="quiz_radio[7019]"
+                  id="quiz_radio_c_7019"
+                />
+                <label class="form-check-label" for="quiz_radio_c_7019">
+                  Using 4 half adders
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_7019"
+                  type="radio"
+                  value="d"
+                  name="quiz_radio[7019]"
+                  id="quiz_radio_d_7019"
+                />
+                <label class="form-check-label" for="quiz_radio_d_7019">
+                  Using 5 half adders
+                </label>
+              </div>
+            </div>
+            <div
+              class="question_block question_no_18802 none_question"
+              data-id="18802"
+            >
+              <input type="hidden" name="answer[18802]" value="B" />
+              <h4 class="question_heading">
+                <span class="question_no">Q11.</span>
+                <span class="question_detail"
+                  >The active and lagging reactive components of current taken
+                  by an AC circuit from a 200 V supply are 40A and 30A,
+                  respectively. What is the value of admittance of the
+                  circuit?</span
+                >
+              </h4>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_18802"
+                  type="radio"
+                  value="a"
+                  name="quiz_radio[18802]"
+                  id="quiz_radio_a_18802"
+                />
+                <label class="form-check-label" for="quiz_radio_a_18802">
+                  0.31 S
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_18802"
+                  type="radio"
+                  value="b"
+                  name="quiz_radio[18802]"
+                  id="quiz_radio_b_18802"
+                />
+                <label class="form-check-label" for="quiz_radio_b_18802">
+                  0.25 S
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_18802"
+                  type="radio"
+                  value="c"
+                  name="quiz_radio[18802]"
+                  id="quiz_radio_c_18802"
+                />
+                <label class="form-check-label" for="quiz_radio_c_18802">
+                  0.52 S
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_18802"
+                  type="radio"
+                  value="d"
+                  name="quiz_radio[18802]"
+                  id="quiz_radio_d_18802"
+                />
+                <label class="form-check-label" for="quiz_radio_d_18802">
+                  0.13 S
+                </label>
+              </div>
+            </div>
+            <div
+              class="question_block question_no_3574 none_question"
+              data-id="3574"
+            >
+              <input type="hidden" name="answer[3574]" value="C" />
+              <h4 class="question_heading">
+                <span class="question_no">Q12.</span>
+                <span class="question_detail"
+                  >Circuit turn-off time of an SCR is defined as the time
+                </span>
+              </h4>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_3574"
+                  type="radio"
+                  value="a"
+                  name="quiz_radio[3574]"
+                  id="quiz_radio_a_3574"
+                />
+                <label class="form-check-label" for="quiz_radio_a_3574">
+                  Taken by the SCR to turn off
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_3574"
+                  type="radio"
+                  value="b"
+                  name="quiz_radio[3574]"
+                  id="quiz_radio_b_3574"
+                />
+                <label class="form-check-label" for="quiz_radio_b_3574">
+                  Required for the SCR current to become zero
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_3574"
+                  type="radio"
+                  value="c"
+                  name="quiz_radio[3574]"
+                  id="quiz_radio_c_3574"
+                />
+                <label class="form-check-label" for="quiz_radio_c_3574">
+                  For which the SCR is reverse biased by the commutation circuit
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_3574"
+                  type="radio"
+                  value="d"
+                  name="quiz_radio[3574]"
+                  id="quiz_radio_d_3574"
+                />
+                <label class="form-check-label" for="quiz_radio_d_3574">
+                  For which the SCR is reverse biased to reduce its current
+                  below the holding current
+                </label>
+              </div>
+            </div>
+            <div
+              class="question_block question_no_18079 none_question"
+              data-id="18079"
+            >
+              <input type="hidden" name="answer[18079]" value="B" />
+              <h4 class="question_heading">
+                <span class="question_no">Q13.</span>
+                <span class="question_detail"
+                  >Find the voltage drop across a \(7\:\Omega\) resistor.<br /><br />
+                  <img
+                    src="https://qualexe.com/assets/images/questions/1.163.jpg"
+                    class="img-fluid"
+                /></span>
+              </h4>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_18079"
+                  type="radio"
+                  value="a"
+                  name="quiz_radio[18079]"
+                  id="quiz_radio_a_18079"
+                />
+                <label class="form-check-label" for="quiz_radio_a_18079">
+                  21 V
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_18079"
+                  type="radio"
+                  value="b"
+                  name="quiz_radio[18079]"
+                  id="quiz_radio_b_18079"
+                />
+                <label class="form-check-label" for="quiz_radio_b_18079">
+                  14 V
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_18079"
+                  type="radio"
+                  value="c"
+                  name="quiz_radio[18079]"
+                  id="quiz_radio_c_18079"
+                />
+                <label class="form-check-label" for="quiz_radio_c_18079">
+                  20 V
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_18079"
+                  type="radio"
+                  value="d"
+                  name="quiz_radio[18079]"
+                  id="quiz_radio_d_18079"
+                />
+                <label class="form-check-label" for="quiz_radio_d_18079">
+                  28 V
+                </label>
+              </div>
+            </div>
+            <div
+              class="question_block question_no_9249 none_question"
+              data-id="9249"
+            >
+              <input type="hidden" name="answer[9249]" value="B" />
+              <h4 class="question_heading">
+                <span class="question_no">Q14.</span>
+                <span class="question_detail"
+                  >Find Norton's resistance for following network:<br /><br />
+                  <img
+                    src="https://qualexe.com/assets/images/questions/1.92.jpg"
+                    class="img-fluid"
+                /></span>
+              </h4>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_9249"
+                  type="radio"
+                  value="a"
+                  name="quiz_radio[9249]"
+                  id="quiz_radio_a_9249"
+                />
+                <label class="form-check-label" for="quiz_radio_a_9249">
+                  \(6\:\Omega\)
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_9249"
+                  type="radio"
+                  value="b"
+                  name="quiz_radio[9249]"
+                  id="quiz_radio_b_9249"
+                />
+                <label class="form-check-label" for="quiz_radio_b_9249">
+                  \(3\:\Omega\)
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_9249"
+                  type="radio"
+                  value="c"
+                  name="quiz_radio[9249]"
+                  id="quiz_radio_c_9249"
+                />
+                <label class="form-check-label" for="quiz_radio_c_9249">
+                  \(4\:\Omega\)
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_9249"
+                  type="radio"
+                  value="d"
+                  name="quiz_radio[9249]"
+                  id="quiz_radio_d_9249"
+                />
+                <label class="form-check-label" for="quiz_radio_d_9249">
+                  \(12\:\Omega\)
+                </label>
+              </div>
+            </div>
+            <div
+              class="question_block question_no_3334 none_question"
+              data-id="3334"
+            >
+              <input type="hidden" name="answer[3334]" value="D" />
+              <h4 class="question_heading">
+                <span class="question_no">Q15.</span>
+                <span class="question_detail"
+                  >Which among the characteristics of the crystal diode is used
+                  for rectification?</span
+                >
+              </h4>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_3334"
+                  type="radio"
+                  value="a"
+                  name="quiz_radio[3334]"
+                  id="quiz_radio_a_3334"
+                />
+                <label class="form-check-label" for="quiz_radio_a_3334">
+                  Opposite
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_3334"
+                  type="radio"
+                  value="b"
+                  name="quiz_radio[3334]"
+                  id="quiz_radio_b_3334"
+                />
+                <label class="form-check-label" for="quiz_radio_b_3334">
+                  Can’t be determined
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_3334"
+                  type="radio"
+                  value="c"
+                  name="quiz_radio[3334]"
+                  id="quiz_radio_c_3334"
+                />
+                <label class="form-check-label" for="quiz_radio_c_3334">
+                  Forward or reversed
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_3334"
+                  type="radio"
+                  value="d"
+                  name="quiz_radio[3334]"
+                  id="quiz_radio_d_3334"
+                />
+                <label class="form-check-label" for="quiz_radio_d_3334">
+                  Forward
+                </label>
+              </div>
+            </div>
+            <div
+              class="question_block question_no_7932 none_question"
+              data-id="7932"
+            >
+              <input type="hidden" name="answer[7932]" value="C" />
+              <h4 class="question_heading">
+                <span class="question_no">Q16.</span>
+                <span class="question_detail"
+                  >The purpose of guard ring in transmission line is to</span
+                >
+              </h4>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_7932"
+                  type="radio"
+                  value="a"
+                  name="quiz_radio[7932]"
+                  id="quiz_radio_a_7932"
+                />
+                <label class="form-check-label" for="quiz_radio_a_7932">
+                  Reduce the earth capacitance of the lowest unit
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_7932"
+                  type="radio"
+                  value="b"
+                  name="quiz_radio[7932]"
+                  id="quiz_radio_b_7932"
+                />
+                <label class="form-check-label" for="quiz_radio_b_7932">
+                  Increase the earth capacitance of the lowest unit
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_7932"
+                  type="radio"
+                  value="c"
+                  name="quiz_radio[7932]"
+                  id="quiz_radio_c_7932"
+                />
+                <label class="form-check-label" for="quiz_radio_c_7932">
+                  To equalize the potential across the disc
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_7932"
+                  type="radio"
+                  value="d"
+                  name="quiz_radio[7932]"
+                  id="quiz_radio_d_7932"
+                />
+                <label class="form-check-label" for="quiz_radio_d_7932">
+                  To reduce the transmission loss
+                </label>
+              </div>
+            </div>
+            <div
+              class="question_block question_no_16424 none_question"
+              data-id="16424"
+            >
+              <input type="hidden" name="answer[16424]" value="D" />
+              <h4 class="question_heading">
+                <span class="question_no">Q17.</span>
+                <span class="question_detail"
+                  >The optical voltage transformer (OVT) measures the electric
+                  voltage by means of ...............</span
+                >
+              </h4>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_16424"
+                  type="radio"
+                  value="a"
+                  name="quiz_radio[16424]"
+                  id="quiz_radio_a_16424"
+                />
+                <label class="form-check-label" for="quiz_radio_a_16424">
+                  Peltier effect
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_16424"
+                  type="radio"
+                  value="b"
+                  name="quiz_radio[16424]"
+                  id="quiz_radio_b_16424"
+                />
+                <label class="form-check-label" for="quiz_radio_b_16424">
+                  Faraday effect
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_16424"
+                  type="radio"
+                  value="c"
+                  name="quiz_radio[16424]"
+                  id="quiz_radio_c_16424"
+                />
+                <label class="form-check-label" for="quiz_radio_c_16424">
+                  Seebeck effect
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_16424"
+                  type="radio"
+                  value="d"
+                  name="quiz_radio[16424]"
+                  id="quiz_radio_d_16424"
+                />
+                <label class="form-check-label" for="quiz_radio_d_16424">
+                  Pockels effect
+                </label>
+              </div>
+            </div>
+            <div
+              class="question_block question_no_1137 none_question"
+              data-id="1137"
+            >
+              <input type="hidden" name="answer[1137]" value="C" />
+              <h4 class="question_heading">
+                <span class="question_no">Q18.</span>
+                <span class="question_detail"
+                  >In a series RLC circuit at resonance, the magnitude of the
+                  voltage developed across the capacitor
+                </span>
+              </h4>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_1137"
+                  type="radio"
+                  value="a"
+                  name="quiz_radio[1137]"
+                  id="quiz_radio_a_1137"
+                />
+                <label class="form-check-label" for="quiz_radio_a_1137">
+                  Is always zero
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_1137"
+                  type="radio"
+                  value="b"
+                  name="quiz_radio[1137]"
+                  id="quiz_radio_b_1137"
+                />
+                <label class="form-check-label" for="quiz_radio_b_1137">
+                  Can never be greater than the input voltage
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_1137"
+                  type="radio"
+                  value="c"
+                  name="quiz_radio[1137]"
+                  id="quiz_radio_c_1137"
+                />
+                <label class="form-check-label" for="quiz_radio_c_1137">
+                  Can be greater than the input voltage, however it is
+                  \(90^\circ\) out of phase with input voltage
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_1137"
+                  type="radio"
+                  value="d"
+                  name="quiz_radio[1137]"
+                  id="quiz_radio_d_1137"
+                />
+                <label class="form-check-label" for="quiz_radio_d_1137">
+                  Can be greater than the input voltage and is in phase with the
+                  input voltage
+                </label>
+              </div>
+            </div>
+            <div
+              class="question_block question_no_5680 none_question"
+              data-id="5680"
+            >
+              <input type="hidden" name="answer[5680]" value="C" />
+              <h4 class="question_heading">
+                <span class="question_no">Q19.</span>
+                <span class="question_detail"
+                  >In an N-type semiconductor, the concentration of minority
+                  carriers mainly depends upon</span
+                >
+              </h4>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_5680"
+                  type="radio"
+                  value="a"
+                  name="quiz_radio[5680]"
+                  id="quiz_radio_a_5680"
+                />
+                <label class="form-check-label" for="quiz_radio_a_5680">
+                  the doping technique
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_5680"
+                  type="radio"
+                  value="b"
+                  name="quiz_radio[5680]"
+                  id="quiz_radio_b_5680"
+                />
+                <label class="form-check-label" for="quiz_radio_b_5680">
+                  the number of donor atoms.
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_5680"
+                  type="radio"
+                  value="c"
+                  name="quiz_radio[5680]"
+                  id="quiz_radio_c_5680"
+                />
+                <label class="form-check-label" for="quiz_radio_c_5680">
+                  the temperature of the material
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_5680"
+                  type="radio"
+                  value="d"
+                  name="quiz_radio[5680]"
+                  id="quiz_radio_d_5680"
+                />
+                <label class="form-check-label" for="quiz_radio_d_5680">
+                  the quality of the intrinsic material,
+                </label>
+              </div>
+            </div>
+            <div
+              class="question_block question_no_19572 none_question"
+              data-id="19572"
+            >
+              <input type="hidden" name="answer[19572]" value="D" />
+              <h4 class="question_heading">
+                <span class="question_no">Q20.</span>
+                <span class="question_detail"
+                  >The transfer function of a system is \(\frac{C(s)}{R(s)}=
+                  \frac{K}{s(s^2+2s+2)(s+2)}\). Find the range of \(K\) for
+                  which the system will be stable.
+                </span>
+              </h4>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_19572"
+                  type="radio"
+                  value="a"
+                  name="quiz_radio[19572]"
+                  id="quiz_radio_a_19572"
+                />
+                <label class="form-check-label" for="quiz_radio_a_19572">
+                  \(0 < K < \infty\)
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_19572"
+                  type="radio"
+                  value="b"
+                  name="quiz_radio[19572]"
+                  id="quiz_radio_b_19572"
+                />
+                <label class="form-check-label" for="quiz_radio_b_19572">
+                  \(0 < K < 25\)
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_19572"
+                  type="radio"
+                  value="c"
+                  name="quiz_radio[19572]"
+                  id="quiz_radio_c_19572"
+                />
+                <label class="form-check-label" for="quiz_radio_c_19572">
+                  \(0 < K < 20\)
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_19572"
+                  type="radio"
+                  value="d"
+                  name="quiz_radio[19572]"
+                  id="quiz_radio_d_19572"
+                />
+                <label class="form-check-label" for="quiz_radio_d_19572">
+                  \(0 < K < 5\)
+                </label>
+              </div>
+            </div>
+            <div
+              class="question_block question_no_8778 block_question"
+              data-id="8778"
+            >
+              <input type="hidden" name="answer[8778]" value="D" />
+              <h4 class="question_heading">
+                <span class="question_no">Q21.</span>
+                <span class="question_detail"
+                  >Which of the following is/are the functions of
+                  microprocessor?</span
+                >
+              </h4>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_8778"
+                  type="radio"
+                  value="a"
+                  name="quiz_radio[8778]"
+                  id="quiz_radio_a_8778"
+                />
+                <label class="form-check-label" for="quiz_radio_a_8778">
+                  If performs the logical and mathematical operations using its
+                  ALU.
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_8778"
+                  type="radio"
+                  value="b"
+                  name="quiz_radio[8778]"
+                  id="quiz_radio_b_8778"
+                />
+                <label class="form-check-label" for="quiz_radio_b_8778">
+                  It controls data flow in a system and hence can transfer data
+                  from one location another.
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  checked
+                  class="form-check-input ans_checkbox_8778"
+                  type="radio"
+                  value="c"
+                  name="quiz_radio[8778]"
+                  id="quiz_radio_c_8778"
+                />
+                <label class="form-check-label" for="quiz_radio_c_8778">
+                  It takes necessary decision.
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_8778"
+                  type="radio"
+                  value="d"
+                  name="quiz_radio[8778]"
+                  id="quiz_radio_d_8778"
+                />
+                <label class="form-check-label" for="quiz_radio_d_8778">
+                  All of above
+                </label>
+              </div>
+            </div>
+            <div
+              class="question_block question_no_13322 none_question"
+              data-id="13322"
+            >
+              <input type="hidden" name="answer[13322]" value="A" />
+              <h4 class="question_heading">
+                <span class="question_no">Q22.</span>
+                <span class="question_detail"
+                  >For a DC machine armature having 10 poles with 10 rps, the
+                  number of hysteresis loops formed per second is
+                           </span
+                >
+              </h4>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_13322"
+                  type="radio"
+                  value="a"
+                  name="quiz_radio[13322]"
+                  id="quiz_radio_a_13322"
+                />
+                <label class="form-check-label" for="quiz_radio_a_13322">
+                  100
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_13322"
+                  type="radio"
+                  value="b"
+                  name="quiz_radio[13322]"
+                  id="quiz_radio_b_13322"
+                />
+                <label class="form-check-label" for="quiz_radio_b_13322">
+                  10
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_13322"
+                  type="radio"
+                  value="c"
+                  name="quiz_radio[13322]"
+                  id="quiz_radio_c_13322"
+                />
+                <label class="form-check-label" for="quiz_radio_c_13322">
+                  1
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_13322"
+                  type="radio"
+                  value="d"
+                  name="quiz_radio[13322]"
+                  id="quiz_radio_d_13322"
+                />
+                <label class="form-check-label" for="quiz_radio_d_13322">
+                  50
+                </label>
+              </div>
+            </div>
+            <div
+              class="question_block question_no_19693 none_question"
+              data-id="19693"
+            >
+              <input type="hidden" name="answer[19693]" value="B" />
+              <h4 class="question_heading">
+                <span class="question_no">Q23.</span>
+                <span class="question_detail"
+                  >The snubber circuit in the thyristor is used for
+                </span>
+              </h4>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_19693"
+                  type="radio"
+                  value="a"
+                  name="quiz_radio[19693]"
+                  id="quiz_radio_a_19693"
+                />
+                <label class="form-check-label" for="quiz_radio_a_19693">
+                  Triggering
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_19693"
+                  type="radio"
+                  value="b"
+                  name="quiz_radio[19693]"
+                  id="quiz_radio_b_19693"
+                />
+                <label class="form-check-label" for="quiz_radio_b_19693">
+                  di/dt protection
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_19693"
+                  type="radio"
+                  value="c"
+                  name="quiz_radio[19693]"
+                  id="quiz_radio_c_19693"
+                />
+                <label class="form-check-label" for="quiz_radio_c_19693">
+                  dv/dt protection
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_19693"
+                  type="radio"
+                  value="d"
+                  name="quiz_radio[19693]"
+                  id="quiz_radio_d_19693"
+                />
+                <label class="form-check-label" for="quiz_radio_d_19693">
+                  Phase shifting
+                </label>
+              </div>
+            </div>
+            <div
+              class="question_block question_no_9235 none_question"
+              data-id="9235"
+            >
+              <input type="hidden" name="answer[9235]" value="B" />
+              <h4 class="question_heading">
+                <span class="question_no">Q24.</span>
+                <span class="question_detail"
+                  >A \(8\:\mu F\) capacitor is connected in series with a
+                  \(800\:k\Omega\) resistor across \(200\:V\) DC supply.
+                  Determine final value of charging current.</span
+                >
+              </h4>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_9235"
+                  type="radio"
+                  value="a"
+                  name="quiz_radio[9235]"
+                  id="quiz_radio_a_9235"
+                />
+                <label class="form-check-label" for="quiz_radio_a_9235">
+                  \(250\:\mu A\)
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_9235"
+                  type="radio"
+                  value="b"
+                  name="quiz_radio[9235]"
+                  id="quiz_radio_b_9235"
+                />
+                <label class="form-check-label" for="quiz_radio_b_9235">
+                  0
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_9235"
+                  type="radio"
+                  value="c"
+                  name="quiz_radio[9235]"
+                  id="quiz_radio_c_9235"
+                />
+                <label class="form-check-label" for="quiz_radio_c_9235">
+                  \(25\:\mu A\)
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_9235"
+                  type="radio"
+                  value="d"
+                  name="quiz_radio[9235]"
+                  id="quiz_radio_d_9235"
+                />
+                <label class="form-check-label" for="quiz_radio_d_9235">
+                  \(2500\:\mu A\)
+                </label>
+              </div>
+            </div>
+            <div
+              class="question_block question_no_18199 none_question"
+              data-id="18199"
+            >
+              <input type="hidden" name="answer[18199]" value="C" />
+              <h4 class="question_heading">
+                <span class="question_no">Q25.</span>
+                <span class="question_detail"
+                  >A system's transfer function is \( G(s) =
+                  \frac{5}{s(s+3)(s+6)} \). Calculate the damping ratio of the
+                  system.</span
+                >
+              </h4>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_18199"
+                  type="radio"
+                  value="a"
+                  name="quiz_radio[18199]"
+                  id="quiz_radio_a_18199"
+                />
+                <label class="form-check-label" for="quiz_radio_a_18199">
+                  \( \zeta = 0.1 \)
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_18199"
+                  type="radio"
+                  value="b"
+                  name="quiz_radio[18199]"
+                  id="quiz_radio_b_18199"
+                />
+                <label class="form-check-label" for="quiz_radio_b_18199">
+                  \( \zeta = 0.2 \)
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_18199"
+                  type="radio"
+                  value="c"
+                  name="quiz_radio[18199]"
+                  id="quiz_radio_c_18199"
+                />
+                <label class="form-check-label" for="quiz_radio_c_18199">
+                  \( \zeta = 0.3 \)
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input ans_checkbox_18199"
+                  type="radio"
+                  value="d"
+                  name="quiz_radio[18199]"
+                  id="quiz_radio_d_18199"
+                />
+                <label class="form-check-label" for="quiz_radio_d_18199">
+                  \( \zeta = 0.4 \)
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="q-submit background-gray">
+            <div class="submit-btns-left">
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                id="mark_review"
+                role="button"
+              >
+                Mark for review and next
+              </button>
+              <button
+                type="button"
+                class="btn btn-primary"
+                id="clear_ans"
+                role="button"
+              >
+                Clear answer
+              </button>
+              <button
+                type="button"
+                class="btn btn-primary"
+                id="next"
+                role="button"
+              >
+                Next
+              </button>
+            </div>
+
+            <div class="submit-btns-right">
+              <!-- Modal button -->
+              <!--<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#submit_confirmation">-->
+              <button type="button" class="btn btn-primary" id="submit">
+                SUBMIT & EXIT
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="right-pannel">
+        <div class="question-detail-right">
+          <h4>Question Analysis</h4>
+          <ul>
+            <li class="question_nos question_nos_885 lightgreen" data-id="885">
+              1
+            </li>
+            <li
+              class="question_nos question_nos_17188 red_color"
+              data-id="17188"
+            >
+              2
+            </li>
+            <li class="question_nos question_nos_9156 red_color" data-id="9156">
+              3
+            </li>
+            <li class="question_nos question_nos_851 " data-id="851">
+              4
+            </li>
+            <li
+              class="question_nos question_nos_20104 red_color"
+              data-id="20104"
+            >
+              5
+            </li>
+            <li
+              class="question_nos question_nos_9244 not_answered"
+              data-id="9244"
+            >
+              6
+            </li>
+            <li
+              class="question_nos question_nos_8803 not_answered"
+              data-id="8803"
+            >
+              7
+            </li>
+            <li
+              class="question_nos question_nos_19208 not_answered"
+              data-id="19208"
+            >
+              8
+            </li>
+            <li
+              class="question_nos question_nos_19538 not_answered"
+              data-id="19538"
+            >
+              9
+            </li>
+            <li
+              class="question_nos question_nos_7019 not_answered"
+              data-id="7019"
+            >
+              10
+            </li>
+            <li
+              class="question_nos question_nos_18802 not_answered"
+              data-id="18802"
+            >
+              11
+            </li>
+            <li
+              class="question_nos question_nos_3574 not_answered"
+              data-id="3574"
+            >
+              12
+            </li>
+            <li
+              class="question_nos question_nos_18079 not_answered"
+              data-id="18079"
+            >
+              13
+            </li>
+            <li class="question_nos question_nos_9249 red_color" data-id="9249">
+              14
+            </li>
+            <li class="question_nos question_nos_3334 red_color" data-id="3334">
+              15
+            </li>
+            <li
+              class="question_nos question_nos_7932 not_answered"
+              data-id="7932"
+            >
+              16
+            </li>
+            <li
+              class="question_nos question_nos_16424 red_color"
+              data-id="16424"
+            >
+              17
+            </li>
+            <li class="question_nos question_nos_1137 red_color" data-id="1137">
+              18
+            </li>
+            <li
+              class="question_nos question_nos_5680 not_answered"
+              data-id="5680"
+            >
+              19
+            </li>
+            <li
+              class="question_nos question_nos_19572 red_color"
+              data-id="19572"
+            >
+              20
+            </li>
+            <li
+              class="question_nos question_nos_8778 lightgreen"
+              data-id="8778"
+            >
+              21
+            </li>
+            <li
+              class="question_nos question_nos_13322 red_color"
+              data-id="13322"
+            >
+              22
+            </li>
+            <li
+              class="question_nos question_nos_19693 red_color"
+              data-id="19693"
+            >
+              23
+            </li>
+            <li class="question_nos question_nos_9235 red_color" data-id="9235">
+              24
+            </li>
+            <li
+              class="question_nos question_nos_18199 red_color"
+              data-id="18199"
+            >
+              25
+            </li>
+            <!--<li class="lightgreen color-white">1</li>
+                <li class="blue color-white">2</li>
+                <li class="lightgreen color-white">3</li>
+                <li class="background-orange color-white">4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>-->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- tournament round 1 end-->
+
+    <div
+      class="modal fade alert-model"
+      id="submit_confirmation"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="pb-0">Confirmation</h3>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <div class="tournament_legend text_left">
+              <div class="legend-section legend_popup">
+                <table>
+                  <tr>
+                    <td>
+                      <span class="green_bg">0</span>
+                    </td>
+                    <td>Answered</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="blue_bg">0</span>
+                    </td>
+                    <td>Answered and Marked for review</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="orange_bg">0</span>
+                    </td>
+                    <td>Not Answered and Marked for review</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="red_bg">0</span>
+                    </td>
+                    <td>Not Answered</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="white_bg_bkp">0</span>
+                    </td>
+                    <td>Not Attempted</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <table class="width_100">
+              <tbody>
+                <tr>
+                  <td>
+                    <p class="pb-0 text_left mr-7">
+                      Are you sure you want to submit your tournament?
+                    </p>
+                  </td>
+                  <td>
+                    <button
+                      class="btn btn-primary width_auto"
+                      id="final_submit"
+                      role="button"
+                    >
+                      Yes
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade alert-model"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!--<div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>-->
+
+          <div class="modal-body">
+            <!--<img src="images/sticker1.png" alt="image">
+<h1>Oops!</h1>
+<p class="pb-2">Need more Practice</p>
+<strong class="pb-4">Your Score: 02/10</strong>
+<p class="detail-pera pb-3">Record & Track Your Performance</p>
+<a href="Login.html" class="btn btn-primary" role="button">Register With Us</a>-->
+            <div id="model_content"></div>
+            <a
+              href="https://qualexe.com/tournament"
+              id="popup_btn"
+              class="btn btn-primary width_200"
+              role="button"
+              >Close</a
+            >
+          </div>
+
+          <div class="modal-footer"></div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      calculate_questions_types();
+      function calculate_questions_types() {
+        var data = $(".not_answered").length;
+        $(".white_bg_bkp").html(data);
+
+        var data = $(".lightgreen").length;
+        $(".green_bg").html(data);
+
+        var data = $(".blue").length;
+        $(".blue_bg").html(data);
+
+        var data = $(".background-orange").length;
+        $(".orange_bg").html(data);
+
+        var data = $(".red_color").length;
+        $(".red_bg").html(data);
+      }
+      $("document").ready(function () {
+        $("#submit").on("click", function () {
+          $(".question_block").each(function () {
+            if ($(this).hasClass("block_question")) {
+              var next_div = $(this).closest("div").next().attr("data-id");
+              var data_id = $(this).attr("data-id");
+              if ($(".ans_checkbox_" + data_id + ":checked").length > 0) {
+                $(".question_nos_" + data_id).removeClass("not_answered");
+                $(".question_nos_" + data_id).removeClass("blue color-white");
+                $(".question_nos_" + data_id).removeClass(
+                  "background-orange color-white"
+                );
+                $(".question_nos_" + data_id).removeClass("red_color");
+                $(".question_nos_" + data_id).removeClass(
+                  "lightgreen color-white"
+                );
+                $(".question_nos_" + data_id).addClass(
+                  "lightgreen color-white"
+                );
+                calculate_questions_types();
+              } else {
+                $(".question_nos_" + data_id).removeClass("not_answered");
+                $(".question_nos_" + data_id).removeClass("blue color-white");
+                $(".question_nos_" + data_id).removeClass(
+                  "background-orange color-white"
+                );
+                $(".question_nos_" + data_id).removeClass("red_color");
+                $(".question_nos_" + data_id).removeClass(
+                  "lightgreen color-white"
+                );
+                $(".question_nos_" + data_id).addClass("red_color");
+                calculate_questions_types();
+              }
+              if (next_div == null) {
+                return false;
+              } else {
+                $(".question_block").hide();
+                $(".question_block").removeClass("block_question");
+                $(".question_block").addClass("none_question");
+                $(".question_no_" + next_div).removeClass("none_question");
+                $(".question_no_" + next_div).addClass("block_question");
+                $(".question_no_" + next_div).show();
+                return false;
+              }
+            }
+          });
+          calculate_questions_types();
+          $("#submit_confirmation").modal("show");
+        });
+        $(".question_nos").on("click", function () {
+          $(".question_block").each(function () {
+            if ($(this).hasClass("block_question")) {
+              var next_div = $(this).closest("div").next().attr("data-id");
+              var data_id = $(this).attr("data-id");
+              if ($(".ans_checkbox_" + data_id + ":checked").length > 0) {
+                $(".question_nos_" + data_id).removeClass("not_answered");
+                $(".question_nos_" + data_id).removeClass("blue color-white");
+                $(".question_nos_" + data_id).removeClass(
+                  "background-orange color-white"
+                );
+                $(".question_nos_" + data_id).removeClass("red_color");
+                $(".question_nos_" + data_id).removeClass(
+                  "lightgreen color-white"
+                );
+                $(".question_nos_" + data_id).addClass(
+                  "lightgreen color-white"
+                );
+                calculate_questions_types();
+              } else {
+                $(".question_nos_" + data_id).removeClass("not_answered");
+                $(".question_nos_" + data_id).removeClass("blue color-white");
+                $(".question_nos_" + data_id).removeClass(
+                  "background-orange color-white"
+                );
+                $(".question_nos_" + data_id).removeClass("red_color");
+                $(".question_nos_" + data_id).removeClass(
+                  "lightgreen color-white"
+                );
+                $(".question_nos_" + data_id).addClass("red_color");
+                calculate_questions_types();
+              }
+              if (next_div == null) {
+                return false;
+              } else {
+                $(".question_block").hide();
+                $(".question_block").removeClass("block_question");
+                $(".question_block").addClass("none_question");
+                $(".question_no_" + next_div).removeClass("none_question");
+                $(".question_no_" + next_div).addClass("block_question");
+                $(".question_no_" + next_div).show();
+                return false;
+              }
+            }
+          });
+          calculate_questions_types();
+          var data_id = $(this).attr("data-id");
+          $(".question_block").hide();
+          $(".question_no_" + data_id).show();
+
+          $(".question_block").removeClass("block_question");
+          $(".question_block").addClass("none_question");
+          $(".question_no_" + data_id).removeClass("none_question");
+          $(".question_no_" + data_id).addClass("block_question");
+
+          window.scrollTo(0, 0);
+        });
+
+        $(".question_block").hide();
+        $(".block_question").show();
+        $("#next").on("click", function () {
+          $(".question_block").each(function () {
+            if ($(this).hasClass("block_question")) {
+              var next_div = $(this).closest("div").next().attr("data-id");
+              var data_id = $(this).attr("data-id");
+              if ($(".ans_checkbox_" + data_id + ":checked").length > 0) {
+                $(".question_nos_" + data_id).removeClass("not_answered");
+                $(".question_nos_" + data_id).removeClass("blue color-white");
+                $(".question_nos_" + data_id).removeClass(
+                  "background-orange color-white"
+                );
+                $(".question_nos_" + data_id).removeClass("red_color");
+                $(".question_nos_" + data_id).removeClass(
+                  "lightgreen color-white"
+                );
+                $(".question_nos_" + data_id).addClass(
+                  "lightgreen color-white"
+                );
+                calculate_questions_types();
+              } else {
+                $(".question_nos_" + data_id).removeClass("not_answered");
+                $(".question_nos_" + data_id).removeClass("blue color-white");
+                $(".question_nos_" + data_id).removeClass(
+                  "background-orange color-white"
+                );
+                $(".question_nos_" + data_id).removeClass("red_color");
+                $(".question_nos_" + data_id).removeClass(
+                  "lightgreen color-white"
+                );
+                $(".question_nos_" + data_id).addClass("red_color");
+                calculate_questions_types();
+              }
+              if (next_div == null) {
+                return false;
+              } else {
+                $(".question_block").hide();
+                $(".question_block").removeClass("block_question");
+                $(".question_block").addClass("none_question");
+                $(".question_no_" + next_div).removeClass("none_question");
+                $(".question_no_" + next_div).addClass("block_question");
+                $(".question_no_" + next_div).show();
+                return false;
+              }
+            }
+          });
+        });
+
+        $("#clear_ans").on("click", function () {
+          $(".question_block").each(function () {
+            if ($(this).hasClass("block_question")) {
+              var data_id = $(this).attr("data-id");
+              $(".ans_checkbox_" + data_id).prop("checked", false);
+              $(".question_nos_" + data_id).removeClass("not_answered");
+              $(".question_nos_" + data_id).removeClass("blue color-white");
+              $(".question_nos_" + data_id).removeClass(
+                "background-orange color-white"
+              );
+              $(".question_nos_" + data_id).removeClass("red_color");
+              $(".question_nos_" + data_id).removeClass(
+                "lightgreen color-white"
+              );
+              $(".question_nos_" + data_id).addClass("not_answered");
+              calculate_questions_types();
+            }
+          });
+        });
+        $("#mark_review").on("click", function () {
+          $(".question_block").each(function () {
+            if ($(this).hasClass("block_question")) {
+              var next_div = $(this).closest("div").next().attr("data-id");
+              var data_id = $(this).attr("data-id");
+              if ($(".ans_checkbox_" + data_id + ":checked").length > 0) {
+                $(".question_nos_" + data_id).removeClass("not_answered");
+                $(".question_nos_" + data_id).removeClass("blue color-white");
+                $(".question_nos_" + data_id).removeClass(
+                  "background-orange color-white"
+                );
+                $(".question_nos_" + data_id).removeClass("red_color");
+                $(".question_nos_" + data_id).removeClass(
+                  "lightgreen color-white"
+                );
+                $(".question_nos_" + data_id).addClass("blue color-white");
+                calculate_questions_types();
+              } else {
+                $(".question_nos_" + data_id).removeClass("not_answered");
+                $(".question_nos_" + data_id).removeClass("blue color-white");
+                $(".question_nos_" + data_id).removeClass(
+                  "background-orange color-white"
+                );
+                $(".question_nos_" + data_id).removeClass("red_color");
+                $(".question_nos_" + data_id).removeClass(
+                  "lightgreen color-white"
+                );
+                $(".question_nos_" + data_id).addClass(
+                  "background-orange color-white"
+                );
+                calculate_questions_types();
+              }
+
+              if (next_div == null) {
+                return false;
+              } else {
+                $(".question_block").hide();
+                $(".question_block").removeClass("block_question");
+                $(".question_block").addClass("none_question");
+                $(".question_no_" + next_div).removeClass("none_question");
+                $(".question_no_" + next_div).addClass("block_question");
+                $(".question_no_" + next_div).show();
+                return false;
+              }
+            }
+          });
+        });
+        $("#final_submit").on("click", function () {
+          clearInterval(counter);
+          $("#submit_confirmation").modal("hide");
+          //var data = $('form').serialize();
+          var fd = $("form").serialize();
+          $.ajax({
+            url: "https://qualexe.com/tournament/insert_quiz",
+            data: fd,
+            type: "post",
+            dataType: "JSON",
+            success: function (output) {
+              var popup_content = "";
+              if (output.correct_ans >= 9) {
+                popup_content =
+                  '<img src="https://qualexe.com/assets/images/excellent.jpg" alt="image" height="150">';
+                popup_content += '<h1 class="font_cursive">Excellent!</h1>';
+                popup_content += '<p class="pb-2 font_cursive">Keep it up</p>';
+                popup_content +=
+                  '<strong class="pb-4">Your Score: ' +
+                  output.correct_ans +
+                  "/10</strong>";
+              }
+              if (output.correct_ans >= 6 && output.correct_ans >= 8) {
+                popup_content =
+                  '<img src="https://qualexe.com/assets/images/good.png" alt="image" height="150">';
+                popup_content += '<h1 class="font_cursive">Good!</h1>';
+                popup_content +=
+                  '<p class="pb-2 font_cursive">Boost your self</p>';
+                popup_content +=
+                  '<strong class="pb-4">Your Score: ' +
+                  output.correct_ans +
+                  "/10</strong>";
+              }
+              if (output.correct_ans <= 5) {
+                popup_content =
+                  '<img src="https://qualexe.com/assets/images/oops.jpg" alt="image" height="150">';
+                popup_content += '<h1 class="font_cursive">Oops!</h1>';
+                popup_content +=
+                  '<p class="pb-2 font_cursive">Need more practice</p>';
+                popup_content +=
+                  '<strong class="pb-4">Your Score: ' +
+                  output.correct_ans +
+                  "/10</strong>";
+              }
+
+              popup_content =
+                '<img src="https://qualexe.com/assets/images/thumb_icon.png" alt="image" height="150">';
+              popup_content +=
+                '<p class="pb-2 font_cursive">Your tournament round 1 is submitted successfully</p>';
+              popup_content += '<ul class="text_left">';
+              //popup_content += '<li><span>Round 1 result will get announced on each month end.</span></li>';
+              popup_content +=
+                "<li><span>Tournament round 2 will start from 16th date of each month.</span></li>";
+              popup_content += "</ul>";
+              $("#popup_btn").html("View Score");
+              $("#popup_btn").attr(
+                "href",
+                "https://qualexe.com/dashboard/tournament_leaderboard_one/273"
+              );
+
+              $("#model_content").html(popup_content);
+              $("#staticBackdrop").modal("show");
+            },
+          });
+        });
+      });
+      //var count = 1500;
+      var count = 765;
+      //var count = 3600000;
+      var counter = setInterval(timer, 1000); //1000 will  run it every 1 second
+
+      function timer() {
+        count = count - 1;
+        var current_date = new Date();
+        var php_last_date = "2024-08-31 23:59:59";
+        //var current_date = new Date();
+        //var php_last_date = "2023-04-06 23:47:00";
+        var last_date = new Date(php_last_date);
+
+        if (current_date.getTime() > last_date.getTime()) {
+          count = -1;
+        }
+        if (count == -1) {
+          //window.location.replace("https://qualexe.com/");
+          $("#submit_confirmation").modal("hide");
+          var fd = $("form").serialize();
+          $.ajax({
+            url: "https://qualexe.com/tournament/insert_quiz",
+            data: fd,
+            type: "post",
+            dataType: "JSON",
+            success: function (output) {
+              var popup_content = "";
+              if (output.correct_ans >= 9) {
+                popup_content =
+                  '<img src="https://qualexe.com/assets/images/excellent.jpg" alt="image" height="150">';
+                popup_content += '<h1 class="font_cursive">Excellent!</h1>';
+                popup_content += '<p class="pb-2 font_cursive">Keep it up</p>';
+                popup_content +=
+                  '<strong class="pb-4">Your Score: ' +
+                  output.correct_ans +
+                  "/10</strong>";
+              }
+              if (output.correct_ans >= 6 && output.correct_ans >= 8) {
+                popup_content =
+                  '<img src="https://qualexe.com/assets/images/good.png" alt="image" height="150">';
+                popup_content += '<h1 class="font_cursive">Good!</h1>';
+                popup_content +=
+                  '<p class="pb-2 font_cursive">Boost your self</p>';
+                popup_content +=
+                  '<strong class="pb-4">Your Score: ' +
+                  output.correct_ans +
+                  "/10</strong>";
+              }
+              if (output.correct_ans <= 5) {
+                popup_content =
+                  '<img src="https://qualexe.com/assets/images/oops.jpg" alt="image" height="150">';
+                popup_content += '<h1 class="font_cursive">Oops!</h1>';
+                popup_content +=
+                  '<p class="pb-2 font_cursive">Need more practice</p>';
+                popup_content +=
+                  '<strong class="pb-4">Your Score: ' +
+                  output.correct_ans +
+                  "/10</strong>";
+              }
+              popup_content =
+                '<img src="https://qualexe.com/assets/images/thumb_icon.png" alt="image" height="150">';
+              popup_content +=
+                '<p class="pb-2 font_cursive">Your tournament round 1 is submitted successfully</p>';
+              popup_content += '<ul class="text_left">';
+              //popup_content += '<li><span>Round 1 result will get announced on each month end.</span></li>';
+              popup_content +=
+                "<li><span>Tournament round 2 will start from 16th date of each month.</span></li>";
+              popup_content += "</ul>";
+              $("#popup_btn").html("View Score");
+              $("#popup_btn").attr(
+                "href",
+                "https://qualexe.com/dashboard/tournament_leaderboard_one/273"
+              );
+              $("#model_content").html(popup_content);
+              $("#staticBackdrop").modal("show");
+            },
+          });
+          clearInterval(counter);
+          return;
+        }
+        if (count % 3 == 0) {
+          var analysis = "";
+          $(".question_nos").each(function () {
+            var data_id = $(this).attr("data-id");
+            if ($(this).hasClass("lightgreen")) {
+              analysis += "&analysis[" + data_id + "]=lightgreen";
+            }
+            if ($(this).hasClass("not_answered")) {
+              analysis += "&analysis[" + data_id + "]=not_answered";
+            }
+            if ($(this).hasClass("background-orange")) {
+              analysis += "&analysis[" + data_id + "]=background-orange";
+            }
+            if ($(this).hasClass("blue")) {
+              analysis += "&analysis[" + data_id + "]=blue";
+            }
+            if ($(this).hasClass("red_color")) {
+              analysis += "&analysis[" + data_id + "]=red_color";
+            }
+          });
+          var fd = $("form").serialize() + "&counter=" + count + analysis;
+          $.ajax({
+            url: "https://qualexe.com/tournament/insert_quiz_three_sec",
+            data: fd,
+            type: "post",
+            dataType: "JSON",
+            success: function (output) {},
+          });
+        }
+
+        var seconds = count % 60;
+        var minutes = Math.floor(count / 60);
+        var hours = Math.floor(minutes / 60);
+        minutes %= 60;
+        hours %= 60;
+
+        document.getElementById("timer").innerHTML =
+          minutes + ":" + ("0" + seconds).slice(-2); // watch for spelling
+      }
+    </script>
+    <script src="javascript/bootstrap.bundle.min.js"></script>
+    <script
+      id="MathJax-script"
+      async
+      src="javascript/tex-mml-chtml.js"
+    ></script>
+    <script>
+      /** TO DISABLE SCREEN CAPTURE **/
+      document.addEventListener("keyup", (e) => {
+        if (e.key == "PrintScreen") {
+          navigator.clipboard.writeText("");
+          alert("Screenshots disabled!");
+        }
+      });
+
+      //     /** TO DISABLE PRINTS WHIT CTRL+P **/
+      //     document.addEventListener('keydown', (e) => {
+      //         if (e.ctrlKey && e.key == 'p') {
+      //             alert('This section is not allowed to print or export to PDF');
+      //             e.cancelBubble = true;
+      //             e.preventDefault();
+      //             e.stopImmediatePropagation();
+      //         }
+      //     });
+      //     $(document).keydown(function (event) {
+      //         if (event.keyCode == 123) { // Prevent F12
+      //             alert('Inspect element disabled!');
+      //             return false;
+      //         } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) { // Prevent Ctrl+Shift+I
+      //             alert('Inspect element disabled!');
+      //             return false;
+      //         }
+      //     });
+      //     document.onkeydown = function(e) {
+      //         if (e.ctrlKey &&
+      //             (e.keyCode === 67 ||
+      //              e.keyCode === 86 ||
+      //              e.keyCode === 85 ||
+      //              e.keyCode === 117)) {
+      //             alert('not allowed');
+      //             return false;
+      //         } else {
+      //             return true;
+      //         }
+      // };
+      //     $(document).on("contextmenu", function (e) {
+      //         e.preventDefault();
+      //     });
+      //     $('body').bind('copy paste',function(e) {
+      //      alert('Do not copy paste content.');
+      //     e.preventDefault(); return false;
+      // });
+    </script>
+  </body>
+</html>

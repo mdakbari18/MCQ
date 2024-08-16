@@ -1,0 +1,9 @@
+.select-exam-section .nav-tabs .nav-link {
+    width: 9.9%;
+}
+.exam-section .exam-links ul li {
+    margin: 15px 15px 15px 0px;
+}
+.exam-section .exam-links ul {
+    justify-content: normal;
+}
